@@ -1,0 +1,30 @@
+/**
+    +------------------------------------------------------------+
+    | This file contains the styles for the enemy.               |
+    +------------------------------------------------------------+ 
+*/
+
+.enemy {
+    text-align: center;
+    position: absolute;
+    height: 170px;
+    width: 275px;
+    background-image: url("../assets/enemy/enemy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 200ms ease-in-out;
+}
+
+/**
+    Explosion when the enemy dies.
+*/
+.enemy--explosion {
+    position: absolute;
+    background-image: url("../assets/explosion.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 250px;
+    width: 250px;
+}

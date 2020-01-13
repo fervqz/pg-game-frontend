@@ -1,0 +1,30 @@
+/* 
+    +------------------------------------------------------------+
+    | The purpose of this file is to set global styles that      |
+    | are NOT going to change in the future and to store style   |
+    | variables used on the other CSS files.                     |
+    +------------------------------------------------------------+
+*/
+
+/* Style variables */
+* {
+    --game-height: 90%;
+    /* Golden ratio aspect */
+    /* --game-width: calc(var(--game-height) * 1.6); */
+    --game-width: 90%;
+}
+
+/* Global styles */
+html, body {
+    margin: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: eightBitFont;
+    font-weight: 800;
+}
+
+body {
+    display: flex;
+}

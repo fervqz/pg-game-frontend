@@ -1,0 +1,38 @@
+/**
+    +------------------------------------------------------------+
+    | This file contains the styles for the main game frame.     |
+    +------------------------------------------------------------+ 
+*/
+
+.game__frame {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    margin: auto;
+    animation: borderAnimation 8s linear infinite;
+    border: 2px;
+    z-index: 50;
+}
+
+/**
+    Animation that makes the frame change colors and border style.
+*/
+@keyframes borderAnimation{
+    0%{
+        border: dashed yellow;
+    }
+    25%{
+        border: dotted blue;
+    }
+    50%{
+        border: dashed red;
+    }
+    75%{
+        border: dashed greenyellow;
+    }
+    100%{
+        border: dotted white;
+    }
+}

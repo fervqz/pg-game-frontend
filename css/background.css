@@ -1,0 +1,77 @@
+/**
+    +------------------------------------------------------------+
+    | This file contains the styles for the asteroids and starts |
+    | background displayed in the menu and main game pages.      |
+    +------------------------------------------------------------+ 
+*/
+
+.frame__background {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    z-index: 0;
+}
+
+.background__asteroid {
+    position: absolute;
+}
+
+/**
+    Rotating asteroids assets.
+*/
+.asteroid--close {
+    height: 30px;
+    width: 30px;
+    background-image: url("../assets/asteroid.gif");
+    background-position: center center;
+    background-size: cover;
+    animation: asteroids_movement 10000ms linear infinite;
+}
+
+/**
+    White no shiny dots that appears closer.
+*/
+.asteroid--middle {
+    height: 2px;
+    width: 2px;
+    border-radius: 100%;
+    background-color: white;
+    animation: asteroids_movement 30000ms linear infinite;
+}
+
+/**
+    Shiny small and slow dots that look really far
+    in the distance.
+*/
+
+.asteroid--far {
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 15px 2px white;
+    animation: asteroids_movement 50000ms linear infinite;
+}
+
+/**
+    Animation that moves the starts and asteroids from right
+    to left, creating the movement illusion.
+*/
+@keyframes asteroids_movement {
+    0% {
+        transform: translate(1000px, 0px) rotate(0deg);
+        opacity: 0%;
+    }
+    5% {
+        opacity: 100%;
+    }
+    95% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        transform: translate(0px, 0px) rotate(360deg);
+    }
+}

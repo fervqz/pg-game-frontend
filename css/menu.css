@@ -1,0 +1,163 @@
+/* 
+    +------------------------------------------------------------+
+    | This file loads the styles for the Menu page (inedx.htrml).|
+    +------------------------------------------------------------+
+*/
+
+html, body, button {
+    font-family: eightBitFont;
+    font-weight: 800;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+}
+
+@font-face {
+    font-family: eightBitFont;
+    src: url("fonts/8-bit/8bitOperatorPlus-Regular.ttf");
+}
+
+@font-face {
+    font-family: eightBitFont;
+    src: url("fonts/8-bit/8bitOperatorPlus-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: arcadeFont;
+    src: url("fonts/arcade/ka1.ttf");
+}
+
+.modal {
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    right: 15%;
+    left: 15%;
+    background-color: rgb(209, 209, 209);
+    color: black;
+    z-index: 99;
+    padding: 10%;
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: yellow;
+    height: 70px;
+    width: 200px;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 5px 5px black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 7px 7px black;
+}
+
+.menu-background {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: transparent;
+    color: white;
+    margin: 5%;
+    border: 1px dotted blue;
+    animation: borderAnimation 4s ease-in-out infinite;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border: dashed yellow;
+    }
+    25% {
+        border: dotted blue;
+    }
+    50% {
+        border: dashed red;
+    }
+    75% {
+        border: dashed greenyellow;
+    }
+    100% {
+        border: dotted white;
+    }
+}
+
+.title {
+    font-family: arcadeFont;
+    font-size: 8rem;
+    animation: titleEffects 3000ms ease-in-out infinite;
+    color: white;
+    transform-origin: center center;
+}
+
+@keyframes titleEffects {
+    0% {
+        color: yellow;
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(0px, -10px) rotate(-1deg) scale(1.1);
+    }
+    50% {
+        color: red;
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    75% {
+        color: green;
+        transform: translate(0px, 10px) rotate(1deg) scale(1.1);
+    }
+    100% {
+        color: white;
+        transform: translate(0px, 0px);
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.options__option {
+    position: relative;
+    padding: 15px;
+    font-size: 1.7rem;
+    width: auto;
+    margin: auto;
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+}
+
+.options__option:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.options__option:hover::before{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 20px;
+    top: 50%;
+    right: -20px;
+    background-color: white;
+    border-radius: 10% 50% 50% 10%;
+}
+.options__option:hover::after{
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 20px;
+    top: 50%;
+    left: -20px;
+    background-color: white;
+    border-radius: 50% 10% 10% 50%;
+}
+
+.options__option:first-child{
+    margin-top: 1rem;
+}

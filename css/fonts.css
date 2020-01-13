@@ -1,0 +1,27 @@
+/* 
+    +------------------------------------------------------------+
+    | This file loads external fonts included in the             |
+    | fonts directory.                                           |
+    +------------------------------------------------------------+
+*/
+
+/* 8-bit font */
+
+@font-face {
+    font-family: eightBitFont;
+    src: url("fonts/8-bit/8bitOperatorPlus-Regular.ttf");
+ }
+ 
+ @font-face {
+    font-family: eightBitFont;
+    src: url("fonts/8-bit/8bitOperatorPlus-Bold.ttf");
+    font-weight: bold;
+ }
+
+/* LED display font */
+
+ @font-face {
+    font-family: ledDisplayFont;
+    src: url("fonts/led-display/Open\ 24\ Display\ St.ttf");
+    font-weight: bold;
+ }

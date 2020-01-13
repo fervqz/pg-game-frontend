@@ -1,0 +1,12 @@
+{
+  "name": "fers-game",
+  "version": "1.0.0",
+  "description": "Final project for 'Programación Web' (january 2020)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Vásquez",
+  "license": "ISC"
+}

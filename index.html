@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <div id="js-background" class="frame__background"></div>
+    <div id="js-modal" class="modal">
+        <p>This game uses audio, please accept the use of autoplay before continue:</p>
+        <p>(Be careful with the volumen level)</p>
+        <button id="js-accept-audio" class="btn">ACCEPT</button>
+    </div id>
+    <div class="menu-background">
+        <h1 class="title">
+            GLEY LANCER
+        </h1>
+        <p>By Fernando Vásquez</p>
+        <p>Usea the arrow keys or the A, W, S, D buttons to move and the space bar to shoot.</p>
+        <div class="options">
+            <a href="./game.html" onclick="setDifficulty('easy')" class="options__option">Play on easy</a>
+            <a href="./game.html" onclick="setDifficulty('medium')" class="options__option">Play on medium</a>
+            <a href="./game.html" onclick="setDifficulty('hard')" class="options__option">Play on hard</a>
+            <a href="./game.html" onclick="setDifficulty('impossible')" class="options__option">Play on IMPOSSIBLE (may have bugs)</a>
+        </div>
+    </div>
+    <audio id="music" src="music/menu_song.mp3" type="audio/mp3" autoplay></audio>
+    <script src="./js/menu/menu_config.js"></script>
+    <script src="./js/menu/set_difficulty.js"></script>
+    <script src="./js/menu/manage_autoplay.js"></script>
+    <script src="./js/hud/background.js"></script>
+</body>
+
+</html>

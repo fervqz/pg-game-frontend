@@ -1,0 +1,189 @@
+/* 
+    +------------------------------------------------------------+
+    | This file loads the styles for the user interface of the   |
+    | game page.                                                 |
+    +------------------------------------------------------------+
+*/
+
+.hud {
+    position: absolute;
+    height: 100px;
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    background-color: rgba(27, 29, 65, 0.342);
+    border: 2px;
+    animation: borderAnimation 8s linear infinite;
+    color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud span {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 100%;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.hud__player-points::before {
+    content: "You";
+    position: absolute;
+    color: yellow;
+    top: 5px;
+    font-size: 1rem;
+}
+
+.hud__enemy-points::before {
+    content: "Enemy";
+    position: absolute;
+    color: yellow;
+    top: 5px;
+    font-size: 1rem;
+}
+
+.life-points-damage {
+    font-family: eightBitFont;
+    color: yellow;
+    animation: pointsDamage 300ms ease-in-out;
+    transform-origin: center left;
+}
+
+/**
+    Jumping style animation when the life points
+    of the player or enemy decrease.
+*/
+
+@keyframes pointsDamage {
+    0% {
+        transform: scale(1) rotate(0deg);
+        color: yellow;
+    }
+    50% {
+        transform: scale(1.5) rotate(-5deg);
+        color: red;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        color: yellow;
+    }
+}
+
+.points-increment {
+    animation: pointsIncrement 300ms ease-in-out;
+    transform-origin: center bottom;
+}
+
+/**
+    Jumping style animation when the points
+    increase.
+*/
+
+@keyframes pointsIncrement {
+    0% {
+        transform: scale(1);
+        color: yellow;
+    }
+    50% {
+        transform: scale(1.5);
+        color: green;
+    }
+    100% {
+        transform: scale(1);
+        color: green;
+    }
+}
+
+/**
+    Ending screens when the player loses or wins.
+*/
+
+.screen {
+    position: absolute;
+    color: yellow;
+    z-index: 100;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    padding-top: 10%;
+    display: none;
+}
+
+.screen__title {
+    font-size: 5rem;
+    margin: 30px;
+}
+
+.screen__subtitle {
+    font-size: 1.5rem;
+}
+
+.screen__points {
+    font-size: 3rem;
+}
+
+.wiggle {
+    animation: wiggle 2000ms ease-in-out infinite;
+}
+
+/**
+    Shaky animation of the ending screens text.
+*/
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    12% {
+        transform: rotate(-10deg);
+    }
+    24% {
+        transform: rotate(20deg);
+    }
+    35% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.scores {
+    padding-top: 3rem;
+    width: 40%;
+    margin: auto;
+}
+
+.score__head {
+    font-size: 1.5rem;
+}
+
+.btn {
+    position: absolute;
+    bottom: 5rem;
+    right: 50%;
+    transform: translateX(+50%);
+    background-color: yellow;
+    height: 70px;
+    width: 400px;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 5px 5px black;
+    font-family: eightBitFont;
+    z-index: 101;
+    font-weight: 800;
+    display: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 7px 7px black;
+    background-color: rgb(187, 187, 0);
+}

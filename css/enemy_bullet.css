@@ -1,0 +1,45 @@
+/**
+    +------------------------------------------------------------+
+    | This file contains the styles for the enemy shoots.        |
+    +------------------------------------------------------------+ 
+*/
+
+/**
+    Shoot glow.
+*/
+.bullet--enemy {
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    box-shadow: 0px 0px 30px 9px orangered;
+    animation: backward 3000ms linear;
+    animation-iteration-count: 1;
+    border: 1px solid black;
+}
+
+/**
+    Fire assets.
+*/
+.bullet--enemy::before {
+    position: absolute;
+    top: -32px;
+    height: 70px;
+    width: 70px;
+    content: "";
+    background-image: url("../assets/fire.gif");
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+}
+
+/**
+    Animation that move the shoot from right to left.
+*/
+@keyframes backward {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-2000px, 0px);
+    }
+}

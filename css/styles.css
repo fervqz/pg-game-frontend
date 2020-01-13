@@ -1,0 +1,18 @@
+/* 
+    +---------------------------------------------------+
+    | This file merges the styles imports in order to   |
+    | make the code cleaner on the 'index.html' file by |
+    | making only one style link.                       |
+    +---------------------------------------------------+
+*/
+
+@import './fonts.css';
+@import './utilities.css';
+@import './board.css';
+@import './player.css';
+@import './enemy.css';
+@import './player_bullet.css';
+@import './enemy_bullet.css';
+@import './explosion.css';
+@import './background.css';
+@import './hud.css';

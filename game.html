@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="./stream/Stream.js"></script>
+    <script src="./js/sounds/SoundManager.js"></script>
+    <script src="./js/requests/requests.js"></script>
+
+
+    <title>Gley Lancer</title>
+</head>
+
+<body>
+    <div id="js-background" class="frame__background"></div>
+    <div class="hud">
+        <span class="hud__player-points">
+            <p id="js-player-life-points" class="life-points-damage">000</p>
+        </span>
+        <span>
+            <p id="js-points-counter" class="points-increment">0000</p>
+        </span>
+        <span class="hud__enemy-points">
+            <p id="js-enemy-life-points" class="life-points-damage">000</p>
+        </span>
+    </div>
+    <div id="js-game__frame" class="game__frame">
+        <div id="js-player" class="player"></div>
+        <div id="js-enemy" class="enemy"></div>
+    </div>
+    <div id="js-you-won" class="screen">
+        <p class="screen__title wiggle">YOU WON!</p>
+        <p class="screen__subtitle wiggle">your score was:</p>
+        <p id="js-you-won-points" class="screen-screen__points wiggle">0000 pts.</p>
+        <table class="scores">
+            <thead class="score__head">
+                <tr>
+                    <td>Name</td>
+                    <td>Score</td>
+                </tr>
+            </thead>
+            <tbody id="js-scores">
+            </tbody>
+        </table>
+    </div>
+    <div id="js-you-lost" class="screen">
+        <p class="screen__title wiggle">GAME OVER</p>
+        <p class="screen__subtitle wiggle">your score was:</p>
+        <p id="js-you-lose-points" class="screen__points wiggle">0000 pts.</p>
+    </div>
+    <button id="js-retry-btn" class="btn retry-btn">SAVE SCORE AND PLAY AGAIN</button>
+
+    <audio id="music" src="music/game_song.mp3" type="audio/mp3" autoplay>
+    </audio>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

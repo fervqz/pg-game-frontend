@@ -1,0 +1,16 @@
+/**
+    +------------------------------------------------------------+
+    | Small explosions when a bullet hits the enemy or           |
+    | the player. The asset is a GIF so, when created,           |
+    | it is immediately removed so it can not run it's           |
+    | animation again.                                           |
+    +------------------------------------------------------------+
+*/
+.explosion{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url("../assets/explosion.gif");
+    background-position: center center;
+    background-size: cover;
+}
