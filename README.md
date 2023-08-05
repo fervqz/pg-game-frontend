@@ -1,6 +1,6 @@
 # What's This?
 
-This is a clone of the game Glay Lancer, you can play a live demo [here](https://pg-game-frontend.glitch.me/).
+This is a clone of the game Glay Lancer, you can play a live demo <a href="https://pg-game-frontend.glitch.me/" target="_blank">here</a>.
 
 It is created with vanilla HTML, CSS an JavaScript.
 
