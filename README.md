@@ -15,5 +15,5 @@ That's all!
 ![Alt text](./assets/img/thumbnail1.png)
 
 ### Gameplay
-![Alt text](./assets/img/thumbnail2.jpg)
+![Alt text](./assets/img/thumbnail2.png)
 
